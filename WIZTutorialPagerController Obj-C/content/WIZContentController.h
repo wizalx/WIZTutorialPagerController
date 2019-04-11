@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) UIImage *image;
 @property (nonatomic) NSInteger index;
+@property (nonatomic) UIColor *backgroundColor;
 
 @property (nonatomic) id <WIZContentControllerDelegate> delegate;
 

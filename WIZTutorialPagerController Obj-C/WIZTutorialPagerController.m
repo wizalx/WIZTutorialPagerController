@@ -81,7 +81,7 @@
     self.pagerView.currentIndex = 0;
     self.pagerView.text = self.tutorialObjects[0].descriptionText;
     self.pagerView.buttonText = self.tutorialObjects[0].btnText;
-    
+    self.pagerView.bgColor = self.backgroundColor;
     __block WIZTutorialPagerController *myself = self;
     
     self.pagerView.tapBlock = ^{
@@ -132,6 +132,7 @@
 
 - (WIZContentController *)viewControllerAtIndex:(NSUInteger)index {
     WIZContentController *initiateController = [[WIZContentController alloc] init];
+    initiateController.backgroundColor = self.backgroundColor;
     initiateController.image = self.tutorialObjects[index].image;
     initiateController.index = index;
     initiateController.delegate = self;

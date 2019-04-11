@@ -82,9 +82,39 @@
 {
     [self.tapBtn setTitle:buttonText forState:UIControlStateNormal];
 }
+
+-(void)setBgColor:(UIColor *)bgColor
+{
+    self.contentView.backgroundColor = bgColor;
+    [self selectColorElementhes];
+}
+
 - (IBAction)clickBtn:(id)sender {
     if (_tapBlock)
         _tapBlock();
+}
+
+-(void)selectColorElementhes
+{
+    
+    CGFloat whiteness = 0;
+    [self.contentView.backgroundColor getWhite:&whiteness alpha:nil];
+    
+    UIColor *mainColor;
+    UIColor *additionalColor;
+     if(whiteness >= 0.5)
+     {
+         mainColor = [UIColor blackColor];
+         additionalColor = [UIColor darkGrayColor];
+     } else {
+         mainColor = [UIColor whiteColor];
+         additionalColor = [UIColor colorWithWhite:0.8 alpha:1.0];
+     }
+    
+    self.descriptionLabel.textColor = mainColor;
+    [self.pageController setPageIndicatorTintColor:additionalColor];
+    [self.pageController setCurrentPageIndicatorTintColor:mainColor];
+
 }
 
 @end

@@ -18,6 +18,7 @@ typedef void(^WIZPagerBarTap)(void);
 @property (nonatomic) NSString *buttonText;
 @property (nonatomic) NSInteger count;
 @property (nonatomic) NSInteger currentIndex;
+@property (nonatomic) UIColor *bgColor;
 
 @property (nonatomic) WIZPagerBarTap tapBlock;
 

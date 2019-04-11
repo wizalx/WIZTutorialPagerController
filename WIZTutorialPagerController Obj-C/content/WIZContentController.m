@@ -19,6 +19,7 @@
     [super viewDidLoad];
     
     self.imageView.image = self.image;
+    self.imageView.backgroundColor = self.backgroundColor;
 }
 
 -(void)viewWillAppear:(BOOL)animated

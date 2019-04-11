@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSArray <WIZTutorialObject*>* tutorialObjects;
 @property (nonatomic) id <WIZTutorialPagerControllerDelegate> delegate;
 
+@property (nonatomic) UIColor *backgroundColor;
+
 @end
 
 @protocol WIZTutorialPagerControllerDelegate <NSObject>

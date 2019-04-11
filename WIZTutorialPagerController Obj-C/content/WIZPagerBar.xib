@@ -25,6 +25,9 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-kS-usN">
                     <rect key="frame" x="12" y="84" width="351" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="9wl-Wv-wCK"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="SKIP"/>
                     <connections>
@@ -37,27 +40,26 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="u6P-YX-dc8">
-                    <rect key="frame" x="12" y="12" width="351" height="27.5"/>
+                <pageControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="u6P-YX-dc8">
+                    <rect key="frame" x="12" y="12" width="351" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="4i8-24-rKt"/>
+                    </constraints>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </pageControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="f0q-Lr-iNa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1MS-Wk-h5D"/>
-                <constraint firstItem="u6P-YX-dc8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="5nc-LE-AJU"/>
-                <constraint firstItem="Qfp-kS-usN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="BFq-Ul-7tK"/>
-                <constraint firstItem="Qfp-kS-usN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HgH-Kf-iv7"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f0q-Lr-iNa" secondAttribute="trailing" constant="12" id="Km9-7S-dKi"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qfp-kS-usN" secondAttribute="bottom" constant="12" id="SiM-VK-jLR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="u6P-YX-dc8" secondAttribute="trailing" constant="12" id="fDN-XJ-nD2"/>
-                <constraint firstItem="f0q-Lr-iNa" firstAttribute="top" secondItem="u6P-YX-dc8" secondAttribute="bottom" constant="12" id="hNu-12-Rwh"/>
-                <constraint firstItem="Qfp-kS-usN" firstAttribute="top" secondItem="f0q-Lr-iNa" secondAttribute="bottom" constant="12" id="j6H-Qt-2o2"/>
-                <constraint firstItem="f0q-Lr-iNa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="pyO-8p-lK8"/>
-                <constraint firstItem="u6P-YX-dc8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="sfg-Y8-BS5"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qfp-kS-usN" secondAttribute="trailing" constant="12" id="stA-ih-uq6"/>
-                <constraint firstItem="u6P-YX-dc8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zcv-Tf-cos"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="u6P-YX-dc8" secondAttribute="trailing" constant="12" id="0ES-ec-60f"/>
+                <constraint firstItem="Qfp-kS-usN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="32I-FO-JVH"/>
+                <constraint firstItem="Qfp-kS-usN" firstAttribute="top" secondItem="f0q-Lr-iNa" secondAttribute="bottom" constant="12" id="Ker-JE-tnL"/>
+                <constraint firstItem="u6P-YX-dc8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="UmX-R8-viG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qfp-kS-usN" secondAttribute="bottom" constant="12" id="YoR-XZ-GgN"/>
+                <constraint firstItem="f0q-Lr-iNa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="b7x-bC-9uD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qfp-kS-usN" secondAttribute="trailing" constant="12" id="bf4-IK-V49"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f0q-Lr-iNa" secondAttribute="trailing" constant="12" id="eaM-AS-IQf"/>
+                <constraint firstItem="u6P-YX-dc8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="zHH-Tc-6Ha"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
