@@ -70,6 +70,9 @@
 -(void)setCount:(NSInteger)count
 {
     self.pageController.numberOfPages = count;
+    if (count == 1) {
+        self.pageController.hidden = YES;
+    }
 }
 
 -(void)setCurrentIndex:(NSInteger)currentIndex
